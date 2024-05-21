@@ -18,6 +18,20 @@ class HomeFragment : Fragment(){
     ): View {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
 
+        binding.userImageProfile.setOnClickListener{
+            (context as MainActivity).supportFragmentManager.beginTransaction()
+                .replace(R.id.main_frm , UserFragment())
+                .commitAllowingStateLoss()
+        }
+
+        binding.companyImageProfile.setOnClickListener{
+            (context as MainActivity).supportFragmentManager.beginTransaction()
+                .replace(R.id.main_frm , CompanyFragment())
+                .commitAllowingStateLoss()
+        }
+
+
+
 
         return binding.root
     }
