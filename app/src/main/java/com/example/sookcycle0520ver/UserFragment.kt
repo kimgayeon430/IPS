@@ -21,8 +21,9 @@ class UserFragment : Fragment(){
 
         binding.loginbtn.setOnClickListener {
             (context as MainActivity).supportFragmentManager.beginTransaction()
-                .replace(R.id.main_frm, HomeFragment())
-                .commitAllowingStateLoss()
+                ?.remove(this )
+                ?.replace(R.id.main_frm, HomeFragment())
+                ?.commitAllowingStateLoss()
         }
 
         return binding.root
