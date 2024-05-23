@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CameraTF_Activity">
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="카메라 액티비티"-->
+<!--        tools:layout_editor_absoluteX="159dp"-->
+<!--        tools:layout_editor_absoluteY="242dp" />-->
+
+    <LinearLayout
+        android:id="@+id/cameraTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="@+id/btn_mv_01"
+        app:layout_constraintEnd_toEndOf="@+id/btn_mv_01"
+        app:layout_constraintBottom_toTopOf="@+id/btn_mv_01">
+
+        <TextView
+            android:id="@+id/camerTFtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/smu_snowflake_regular"
+            android:text="재활용품 AI 카메라 인식"
+            android:layout_marginTop="80dp"
+            android:textAlignment="center"
+            android:textColor="@color/main_color"
+            android:textSize="13pt" />
+
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/btn_mv_01"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/cameraTitle"
+        app:layout_constraintStart_toStartOf="@id/cameraTitle"
+        app:layout_constraintTop_toBottomOf="@id/cameraTitle">
+
+        <ImageButton
+            android:id="@+id/btn_mv"
+            android:layout_width="410dp"
+            android:layout_height="180dp"
+            android:background="@color/white"
+            android:contentDescription="인공지능카메라버튼"
+            android:scaleType="fitCenter"
+            android:src="@drawable/camera_tf" />
+
+        <TextView
+            android:id="@+id/description_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/smu_snowflake_regular"
+            android:text="카메라 버튼을 클릭하세요!"
+            android:textAlignment="center"
+            android:textColor="@color/main_color"
+            android:textSize="10pt"
+            android:layout_marginTop="80dp"
+            app:layout_constraintEnd_toEndOf="@id/btn_mv"
+            app:layout_constraintStart_toStartOf="@id/btn_mv"
+            app:layout_constraintTop_toBottomOf="@id/btn_mv"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

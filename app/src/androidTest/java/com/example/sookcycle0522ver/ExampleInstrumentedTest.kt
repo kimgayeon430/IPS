@@ -1,4 +1,4 @@
-package com.example.sookcycle0520ver
+package com.example.sookcycle0522ver
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

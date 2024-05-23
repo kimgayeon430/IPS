@@ -1,12 +1,12 @@
-package com.example.sookcycle0520ver
+package com.example.sookcycle0522ver
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.sookcycle0520ver.databinding.FragmentCompanyBinding
-import com.example.sookcycle0520ver.databinding.FragmentUserBinding
+import com.example.sookcycle0522ver.R
+import com.example.sookcycle0522ver.databinding.FragmentCompanyBinding
 
 class CompanyFragment : Fragment(){
 
@@ -22,6 +22,7 @@ class CompanyFragment : Fragment(){
 
         binding.loginbtn.setOnClickListener{
 
+            name = binding.companyNameEdit.text.toString()
 
             (context as MainActivity).supportFragmentManager.beginTransaction()
                 ?.remove(this)

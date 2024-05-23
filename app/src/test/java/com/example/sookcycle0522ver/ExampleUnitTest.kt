@@ -1,4 +1,4 @@
-package com.example.sookcycle0520ver
+package com.example.sookcycle0522ver
 
 import org.junit.Test
 

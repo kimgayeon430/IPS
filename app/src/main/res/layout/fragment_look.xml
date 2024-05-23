@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LookFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/community_tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="당신의 재활용 경험을 \n 공유해주세요!"
+        android:textColor="@color/main_color"
+        android:textSize="13pt"
+        android:layout_margin="20dp"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:layout_below="@+id/community_tv1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/main_color" />
+
+    <TextView
+        android:id="@+id/community_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Today's Tip 💡 > "
+        android:textColor="@color/main_color"
+        android:textSize="12pt" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/community_tv2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape">
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/towriteimageBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/container"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/pencil"
+        android:scaleType="fitXY"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+</RelativeLayout>
+

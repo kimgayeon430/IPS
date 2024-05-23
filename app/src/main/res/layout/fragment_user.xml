@@ -19,7 +19,7 @@
             android:text="Sookcycling Login"
             android:textAlignment="center"
             android:textColor="@color/main_color"
-            android:textSize="15pt" />
+            android:textSize="13pt" />
 
         <ImageView
             android:id="@+id/image_login"
@@ -27,7 +27,7 @@
             android:layout_height="150dp"
             android:src="@drawable/user_profile"
             android:layout_below="@+id/apptitle"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="40dp"/>
 
         <TextView
             android:id="@+id/user_name_text"
@@ -38,7 +38,7 @@
             android:textSize="10pt"
             android:fontFamily="@font/smu_snowflake_regular"
             android:textColor="@color/main_color"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="30dp"/>
 
         <EditText
@@ -58,7 +58,7 @@
             android:textSize="10pt"
             android:fontFamily="@font/smu_snowflake_regular"
             android:textColor="@color/main_color"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="20dp"/>
 
         <EditText
